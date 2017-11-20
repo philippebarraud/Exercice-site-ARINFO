@@ -15,3 +15,11 @@ html
     color:#555;
     
 }
+
+.row
+{
+    max-width:1140px;
+    margin:0, auto;
+
+
+}
