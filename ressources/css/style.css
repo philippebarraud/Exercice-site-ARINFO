@@ -9,4 +9,9 @@ html
 {
     background:#fff;
     text-rendering:optimizeLegibility;
+    font-family: 'Vollkorn SC', 'Arial', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color:#555;
+    
 }
