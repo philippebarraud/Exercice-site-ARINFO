@@ -16,9 +16,6 @@ html {
 
 /*header*/
 
-
-
-
 header {
     background-image: url(/ressources/img/header.jpg);
     height: 100vh;
@@ -26,46 +23,112 @@ header {
     background-position: center;
 }
 
-.menu-text-box 
+.row {
+    max-width: 1140px;
+
+    margin: 0 auto;
+}
+
+.logo
 {
-    position:absolute;
-    width:1140px;
-    top:26%;
-    left:25%;
-    transform: translate(-25%, -50%); 
+    height:100px;
+    margin:10px 10px;
+    float:left;
+    width:auto;
+}
+
+.main-nav
+{
+    float:right;
+    list-style:none;
+    margin-top: 35px;
+    margin-right:10px;
+}
+
+.main-nav li 
+{
+    display:inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+
+{
+    text-decoration: none;
+    font-weight:400;
+    font-size:120%;
+    text-transform:lowercase;
+    color:#fff;
+    border-bottom:2px solid transparent;
+    transition: border-bottom 0.2s;
     
+}
+.main-nav li a:hover,
+.main-nav li a:active
+
+{
+   border-bottom: 2px solid #3c98ba;
+    
+}
+.menu-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left:58%;
+    transform: translate(-25%, -50%);
+
 }
 
 h1 {
     font-weight: 450;
-    font-size: 500%;
-    float: left;
+    font-size: 450%;
     letter-spacing: 25px;
-    text-transform:lowercase;
+    text-transform: lowercase;
+    margin-right: 25%;
+
 }
 
-.btn
-{
-    display:inline-block;
-    padding:10px 50px;
-    font-weight:700i;
-    text-decoration:none;
-    border-radius:30px;
-    margin-top:45px;
-    
-}
-.btn-full
-{
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 8px 50px;
+    font-weight: 700i;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.2s, border 0.2s, color 1s;
+    font-size: 150%;
 
-    border:2px solid white;
-    color:#fff;
-    
+
 }
 
-.btn-ghost
-{
-    background-color:#fff;
-    border:2px solid white;
-    color:rgba(0, 0, 0, 0.29);
-    
+.btn-full:link,
+.btn-full:visited {
+
+    border: 2px solid white;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    background-color: #fff;
+    border: 2px solid white;
+    color: rgba(0, 0, 0, 0.29);
+}
+
+.btn:hover,
+.btn:active {
+    border: 2px solid #3c98ba;
+    color: #3c98ba;
+}
+
+btn-full:hover,
+btn-full:active {
+    background-color: #3c98ba;
+}
+
+btn-ghost:hover,
+btn-ghost:active {
+    background-color: #fff;
 }
